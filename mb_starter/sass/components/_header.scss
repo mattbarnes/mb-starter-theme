@@ -1,0 +1,26 @@
+.page-header {
+}
+
+.branding-wrapper {
+}
+
+.header-wrapper {
+}
+
+.highlighted-wrapper {
+}
+
+/* site name (usually logo) */
+
+#site-name {
+		a {
+		background-image: url(PATH_TO_LOGO);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: block;
+		height: HEIGHT;
+		text-indent: -9999px;
+		width: WIDTH;
+	}
+}

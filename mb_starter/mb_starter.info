@@ -1,0 +1,28 @@
+name = MB Starter
+description = Starter theme.
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/styles.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/scripts.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding]       = Branding
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[content]        = Content
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer]         = Footer

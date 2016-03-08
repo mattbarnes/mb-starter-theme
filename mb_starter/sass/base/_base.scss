@@ -1,0 +1,94 @@
+::-moz-selection {
+    color: COLOR;
+    background: COLOR;
+}
+::selection {
+    color: COLOR; 
+    background: COLOR;
+}
+
+body {
+	background-color: COLOR;
+	color: COLOR;
+	font-family: FONT_STACK;
+	font-size: 100%;
+	font-weight: FONT_WEIGHT;
+	line-height: 1.625;
+}
+
+b, strong {
+	font-weight: FONT_WEIGHT;
+}
+i, em {
+	font-style: italic;
+}
+.constrained {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1600px;
+	@include clearfix;
+}
+
+/* Inline Links */
+.links--inline {
+  *zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.links--inline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.links--inline li {
+  float: left;
+  /* LTR */
+  margin-right: 1em;
+  /* LTR */
+}
+.links--inline li > a {
+  display: block;
+}
+
+/* Tabs */
+.tabs a {
+  background-color: #eee;
+  color: COLOR;
+  font-size: 0.875em;
+  font-weight: 500;
+  text-decoration: none;
+}
+.tabs a.active {
+  background-color: #ccc;
+}
+.tabs a:hover, .tabs a:focus {
+  background-color: #bbb;
+}
+
+/* Primary Tabs */
+.tabs--primary {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #bbb;
+  @media (min-width: 800px) {
+	 // width: 50%;
+	  //margin-left: 40%;
+  }
+}
+.tabs--primary a {
+  padding: 0.3em 0.8em;
+}
+
+/* Secondary Tabs */
+.tabs--secondary a {
+  padding: 0.2em 0.5em;
+  margin: 0.4em 0;
+  font-size: 0.9em;
+}
+
+@media (min-width: 800px) {
+	.messages {
+		//margin-left: 40%;
+		//width: 50%;
+	}
+}

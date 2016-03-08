@@ -1,0 +1,13 @@
+- template.php: If using google fonts, add url
+- gulp: Install gulp dependencies with npm install
+- wysiwyg.css: Fill out missing pieces in css/wysiwyg.css
+- scripts.js: Fill in name of menu element in mobileMenu().
+- _colors.scss: define colors
+- page.tpl.php: add <div class="constrained"></div> where needed
+
+If changing theme name, change in these locations:
+	- directory name
+	- info file name
+	- info file content
+	- template.php function names
+	- theme-settings.php function names

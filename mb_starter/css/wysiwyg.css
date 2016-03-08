@@ -1,0 +1,59 @@
+@import url('ADD_GOOGLE_FONTS');
+body {
+	color: COLOR;
+	font-family: FONT_FAMILY;
+	font-size: 100%;
+	font-weight: FONT_WEIGHT;
+	line-height: 1.625;
+}
+p, ul, ol, dl, blockquote, table, h2, h3, h4, h5, h6, img {
+	margin-bottom: 1em;
+}
+p.intro {
+	color: COLOR;
+	font-size: 1.2em;
+	line-height: 1.75;
+}
+a {
+	color: COLOR;
+}
+img {
+	max-width: 100%;
+	height: auto !important;
+}
+img.align-left {
+	float: left;
+	margin-right: 10px;
+}
+img.align-right {
+	float: right;
+	margin-left: 10px;
+}
+h2 {
+	font-size: 1.5em;
+	margin-bottom: .25em;
+}
+h3 {
+	font-size: 1.2em;
+	margin-bottom: .25em;
+}
+h4 {
+	font-size: 0.875em;
+	margin-bottom: .5em;
+}
+ul {
+	margin-left: 1.875em;
+}
+ul li {
+	list-style: LIST_STYLE;
+}
+ol {
+	margin-left: 1.875em;
+}
+ol li {
+	list-style: decimal;
+}
+blockquote {
+	padding: 1em;
+	background-color: COLOR;
+}
