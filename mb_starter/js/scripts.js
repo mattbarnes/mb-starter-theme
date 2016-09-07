@@ -6,7 +6,6 @@ $(document).ready( function() {
 
 function mobileMenu() {
 	$("#menu-trigger").click( function() {
-		$("_MENU_ELEMENT_").toggleClass("mobile-menu-open");
-		$(this).toggleClass("open");
+		$("body").toggleClass("mobile-menu-open");
 	})
 }

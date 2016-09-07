@@ -40,13 +40,13 @@
  * @see template_preprocess()
  * @see template_preprocess_html()
  * @see template_process()
- * @see omega_preprocess_html()
  */
 ?><!DOCTYPE html>
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
