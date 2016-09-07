@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -18,6 +19,7 @@ gulp.task('sass:dev', function () {
   gulp.src('./sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+		.pipe(sassGlob())
     .pipe(autoprefixer({
       browsers: ['last 2 version']
     }))

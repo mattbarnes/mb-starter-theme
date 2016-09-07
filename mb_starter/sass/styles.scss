@@ -1,10 +1,7 @@
 // Import variables, abstractions, base styles and components.
 // Uncomment the next lines and adjust them to your needs.
 
-@import "abstractions/_mixins.scss";
-@import "variables/_colors.scss";
-@import "base/_base.scss";
-@import "components/_header.scss";
-@import "components/_navigation.scss";
-@import "components/_content.scss";
-@import "components/_footer.scss";
+@import "abstractions/**/*.scss";
+@import "variables/**/*.scss";
+@import "base/**/*.scss";
+@import "components/**/*.scss";
