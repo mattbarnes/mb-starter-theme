@@ -1,15 +1,9 @@
 /// Slightly lighten a color
-/// @param {Color} $color - color to tint
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
 
 /// Slightly darken a color
-/// @param {Color} $color - color to shade
-/// @param {Number} $percentage - percentage of `$color` in returned color
-/// @return {Color}
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
@@ -27,7 +21,7 @@
 }
 
 // hide text for image replacement
-@mixin hide-text {
+@mixin image-replacement {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;

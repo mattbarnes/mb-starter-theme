@@ -50,7 +50,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
-<body<?php print $attributes;?>>
+<body class="<?php print $classes;?>">
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
