@@ -8,9 +8,10 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass:prod', function () {
   gulp.src('./sass/*.scss')
+    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-       browsers: ['last 2 version']
+      browsers: ['last 2 version']
     }))
     .pipe(gulp.dest('./css'));
 });
@@ -18,8 +19,8 @@ gulp.task('sass:prod', function () {
 gulp.task('sass:dev', function () {
   gulp.src('./sass/*.scss')
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-		.pipe(sassGlob())
     .pipe(autoprefixer({
       browsers: ['last 2 version']
     }))
