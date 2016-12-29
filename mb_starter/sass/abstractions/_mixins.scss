@@ -33,3 +33,9 @@
 	left: -9999px;
 }
 
+// constrain container width
+@mixin constrained {
+	width: 96%;
+	margin: 0 auto;
+	max-width: 1600px;
+}
